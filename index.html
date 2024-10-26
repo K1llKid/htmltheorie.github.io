@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="k1llk1d">
+  <meta name="description" content="Synthèse du cours d'html théorie au format HTML">
+  <meta name="keywords" content="Synthèse, html, théorie, 2024">
+  <!-- IMPORT FROM UNPKG.COM | Style css style windows 7  -->
+  <link rel="stylesheet" href="https://unpkg.com/7.css"> 
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Synthèse html</title>
+</head>
+<body>
+  <div class="win7">
+    <ul role="menubar" class="can-hover">
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        Accueil
+        <ul role="menu">
+          <li role="menuitem">
+            <a href="index.html#historique">
+              Historique <span>Ctrl+H</span>
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="#semantique">
+              Sémantique <span>Ctrl+S</span>
+            </a>
+          </li>
+          <li role="menuitem" class="has-divider">
+            <a href="#menubar">
+              Save As... <span>Ctrl+Shift+S</span>
+            </a>
+          </li>
+          <li role="menuitem"><a href="#menubar">Exit</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        Edit
+        <ul role="menu">
+          <li role="menuitem"><a href="#menubar">Undo</a></li>
+          <li role="menuitem"><a href="#menubar">Copy</a></li>
+          <li role="menuitem"><a href="#menubar">Cut</a></li>
+          <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
+          <li role="menuitem"><a href="#menubar">Delete</a></li>
+          <li role="menuitem"><a href="#menubar">Find...</a></li>
+          <li role="menuitem"><a href="#menubar">Replace...</a></li>
+          <li role="menuitem"><a href="#menubar">Go to...</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        View
+        <ul role="menu">
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Zoom
+            <ul role="menu">
+              <li role="menuitem"><button>Zoom In</button></li>
+              <li role="menuitem"><button>Zoom Out</button></li>
+            </ul>
+          </li>
+          <li role="menuitem"><a href="#menubar">Status Bar</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        Help
+        <ul role="menu">
+          <li role="menuitem"><a href="#menubar">View Help</a></li>
+          <li role="menuitem"><a href="about.html">About</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="corps">
+      <h2>Synthèse HTML basé sur le cours théorique</h2>
+      <p>Pour accéder aux différents chapitres, rendez vous dans le menu de navigation et accéder à tous les différents chapitres du cours.</p>
+      <h4 id="historique">Historique</h4>
+      <p>Naissance de <abbr title="Hyper Text Markup Language">l'HTML</abbr> en 1991 par Tim Berners-Lee.</p><p> L'HTML à pour but de structurer le contenu.</p>
+      <div class="window active" style="max-width: 300px">
+        <div class="title-bar">
+          <div class="title-bar-text">Tim Berners Lee création</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>Tim montre sa révolution</p>
+          <img src="img/tim_berners_lee.jpg" width="250" height="200">
+        </div>
+      </div>
+      <p>La première page web à été inventée en 1993 par le <abbr title="The European Organization for Nuclear Research"> CERN</abbr></p>
+      <div class="window active" style="max-width: 400px">
+        <div class="title-bar">
+          <div class="title-bar-text">Premier site du CERN</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>Tim montre sa révolution</p>
+          <img src="img/cern.png" width="350" height="200">
+        </div>
+      </div>
+
+      <h4 id="semantique">Sémantique</h4>
+      <p>La sémantique nous permet de mieux comprendre et connaitre le fonctionnement des balises, dans ce chapitre les balises sont détaillées possède une decription et un exemple à chaque fois, l'exemple est simplement l'affichage dans le navigateur des balises utilisées.
+        En programmation, la sémantique fait référence au sens d'une partie de code — par exemple "quel effet aura l'exécution de cette ligne de JavaScript ?", ou "quel est le rôle ou le but de cet élément HTML (plutôt que "à quoi ressemble-t-il ?".)"
+      </p>
+      <h4>La balise &lt;a&gt;</h4>
+      <p>La balise a (anchor) permet de baliser un hyperlien, il est important de lui rajouter des attributs qui sont :
+        <mark>href, hreflang, title.</mark>
+      </p>
+      <p>href contient le lien vers là ou la balise a doit redirigée</p>
+      <p>hreflang doit contenir une langue, permet de préciser la langue d'où la balise "a" redirige</p>
+      <p>title permet d'indiquer le texte que l'on voit quand l'on passe notre souris sur le lien</p>
+      <p><b>Exemple :</b></p>
+      <a href="#" hreflang="en" title="titre de la page">CECI EST UN LIEN</a>
+      
+      
+      <h4>La balise &lt;abbr&gt;</h4>
+      <p>abbr est le diminutif de abbréviation, il permet de faire en sorte que quand l'on passe notre souris sur une abbréviation elle affiche le vrai mot.</p>
+      <p>On ajoute l'attribut title pour le résultat.</p>
+      <p><b>Exemple :</b></p>
+      <abbr title="Hyper Text Marlup Language">HTML</abbr>
+      
+      <h4>La balise &lt;dfn&gt;</h4>
+      <p>dfn est le diminutif de définition, on l'utilise donc pour expliquer qu'on expliquer un terme spécifique.</p>
+      <p><b>Exemple :</b> </p>
+      <p>Le <dfn><abbr title=" CASCADING STYLE SHEET">CSS</abbr></dfn> est un langage servant à styliser l'html.</p>
+      
+      
+      <h4>La balise &lt;em&gt;</h4>
+      <p>La balise em sert à mettre en évidence un élément important <b>exemple :</b> <em>JE SUIS IMPORTANT.</em></p>
+
+      <h4>La balise &lt;strong&gt;</h4>
+      <p>La balise strong permet de mettre un élement très <em>important</em> en évidence, <b>exemple :</b> JE SUIS TRES IMPORTANT.</p>
+
+      <h4>La balise &lt;i&gt;</h4>
+      <p>Simplement quand on spécifie quelque chose à l'italique <b>exemple :</b> L'html c'est facile (<i>si tu pratiques</i>).</p>
+      
+      <h4>La balise &lt;b&gt;</h4>
+      <p>Permet de mettre en évidence mais sans intérêt d'importance.</p>
+      <p><b>Exemple :</b> <b>L'html est un langage de script</b> et non de programmation car on utilise pas de variable ni d'objet.</p>
+      
+      <div class="window active" style="max-width: 550px">
+        <div class="title-bar">
+          <div class="title-bar-text">Tableau pour choisir</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>Tableau pour choisir entre em, strong, i, b</p>
+          <img src="img/exemple.png" width="500 " height="250">
+        </div>
+      </div>
+    
+      <h4>La balise &lt;mark&gt;</h4>
+      <p>Permet de surligner un élement textuel, sert à mettre en évidence pour servir de référence pour les moteurs de recherche</p>
+      <p><b>Exemple :</b><br>J'aime manger des <mark>bonbons</mark> des <mark>patisseries</mark>, j'adore aussi la <mark>charcuterie</mark></p>
+
+      <h4>La balise &lt;u&gt;</h4>
+      <p>Permet de signifier que l'on doit modifier le texte en question plus tard.<br>
+      Exemple : Ceci est une <u>fautes.</u></p>
+
+      <h4>La balise &lt;small&gt;</h4>
+      <p>Permet d'écrire en petit caractère d'imprimerie, utile pour une précision ou une licence d'utilisation ect...<br>
+      <b>Exemple :</b> Ce site est sous licence d'utilisation <small>CC-by-sa</small></p>
+
+      <h4>La balise &lt;sub&gt; et &lt;sup&gt;</h4>
+      <p>Sub permet de mettre en indice <b>Exemple : </b> H<sub>2</sub>O<br>
+      sup permet de mettre en exposant <b>Exemple : </b>4<sup>2</sup></p>
+    
+      <h4>La balise &lt;cite&gt;</h4>
+      <p>Utilisé pour citer la source d'une citation.</p>
+      <p><b>Exemple : </b>Comme le dit <cite>Nietzsche</cite> : <q>Il n’y a pas de faits, il n’y a que des interprétations.</q> </p>
+
+      <h4>La balise &lt;q&gt;</h4>
+      <p>Permet de cite une courte citation.<br>
+        Exemple : Dans <cite>Le Loup des Steppes de Hermann Hesse : </cite><q>Pour atteindre une forme supérieure de l'humour, il faut commencer par ne plus prendre au sérieux sa propre personne. </q> </p>
+      
+      <h4>La balise &lt;bdo&gt;</h4>
+      <p>Permet de modifier la direction du texte en utilisant l'attribut dir et les valeurs : <br>
+      ltr : left to right
+      rtl : right to left<br>
+    <b>Exemple : </b> <bdo dir="rtl">Ce texte est dans l'autre sense.</bdo> </p>
+
+      <h4>La balise &lt;code&gt;</h4>
+      <p>Utilisé pour montrer une ligne de code, si le code est en html il faut utiliser les caractes suivants pour remplacer les &lt;&gt;.<br>
+      &&nbsplt; pour &lt;<br>
+      &&nbspgt; pour &gt;<br>
+      On utilise &lt;pre&gt; devant &lt;code&gt; pour garder les indentations.</p>
+
+      <h4>La balise &lt;kbd&gt;</h4>
+      <p>Permet d'afficher des touches de clavier, pratique pour montrer des raccourics.<br>
+      <b>Exemple : </b> Pour revenir en arrière faites <kbd>ctrl</kbd>+<kbd>z.</kbd></p>
+
+      <h4>La balise &lt;samp&gt;</h4>
+      <p>Permet d'afficher un message de sortie de system <b>Exemple : </b><samp>Erreur system32.</samp></p>
+
+      <h4>La balise &lt;var&gt;</h4>
+      <p>Permet d'afficher une variable mathématique <b>Exemple : </b> <var>y = x + 2.</var></p>
+
+      <h4>La balise &lt;br&gt;</h4>
+      <p>Permet d'appliquer un retour chariot.</p>
+      <div role="tooltip"><strong>ATTENTION</strong> ne pas utilise br pour séparer 2 éléments html. br sert uniquement à faire des retour chariot dans des paragraphes !</div>
+      <p><b>Exemple :</b> Ceci est un<br> br.</p>
+
+      <h4>La balise &lt;meter&gt;</h4>
+      <p>Permet l'affichage d'une jauge en rajoutant les attributs : <br>
+      value : valeur de la jauge.<br>
+      max : valeur maximale de la jauge.<br>
+      <b>Exemple :</b> Pourcentage de batterie :  10% <meter value="10" max="100"></meter> </p>
+
+      <h4>La balise &lt;progress&gt;</h4>
+      <p>Dans le meme sens que meter elle permet d'afficher une barre de progression avec les attributs :<br>
+      value : valeur de la barre.<br>
+      max : valeur max qu'elle peut atteindre.<br>
+    <b>Exemple : </b> Téléchargement en cours <span>40%</span> : <progress value="40" max="100"></progress></p>
+      
+      <h4>La balise &lt;span&gt;</h4>
+      <p>Permet d'isoler un élement d'une partie du texte, il à une utilité équivalente au div mais lui est utiliser dans des portions de textes <br>
+      <b>Exemple :</b>Ce <span class="exemplespan">morceau</span> de texte est entouré d'une balise span cette même balise possède des attributs css qui la stylise avec une classe attriuée nommée exemplespan.</p>
+    </div>  
+
+      
+  </body>
+  </html>

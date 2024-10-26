@@ -1,0 +1,28 @@
+body{
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.about{
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.about2{
+	float: right;
+	margin-top: 20px;
+	margin-right: 600px;
+}
+
+.corps{
+	margin-left: 10px;
+}
+p{
+	font-size: 1.4em;	
+}
+/* EXEMPLESPAN : exemple d'un span stylisé  */
+.exemplespan{
+	color: aliceblue;
+	background-color: black;
+	font-size: 1.3em;
+	padding: 4px 4px 4px 4px;
+}
